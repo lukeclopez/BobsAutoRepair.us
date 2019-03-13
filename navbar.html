@@ -22,31 +22,45 @@
     color: white;
   }
 
+  .test {
+    postition: relative !important;
+    top: -20px !important;
+  }
+
   .shadow {
     text-shadow: 2px 2px black;
   }
 
+  .brand-logo img {
+      /* Logo Aspect Ratio: 1.09 */
+      height: 75px;
+      width: 82px;
+  }
+  .navbar span {
+      position: relative;
+      left: 45%;
+  }
 </style>
 
 <body>
 
   <!-- Navbar -->
-  <div class="navbar-extended">
+  <div class="navbar">
     <nav>
       <div class="nav-wrapper green">
-        <!-- Logo Aspect Ratio: 1.09 -->
-        <a href="#" class="brand-logo"><img src="images/bobs_auto_logo.png" style="height:100px;width:109px;"></a>
+        <a href="#" class="brand-logo">
+          <img src="images/bobs_auto_logo.png">
+        </a>
+
+        <span class="shadow test">813-779-CARS</span>
+
         <ul class="right hide-on-med-and-down">
           <li><a href="#">Services</a></li>
           <li><a href="#">About Us</a></li>
           <li><a href="#">Contact Us</a></li>
           <li><a href="#">Blog</a></li>
         </ul>
-        </div>
-        <div class="nav-content green center">
-          <h6 class="center oldtimey shadow nav-title">Old-fashioned service...</h6>
-          <h6 class="center shadow nav-title">Today's technology!</h6>
-        </div>
+      </div>
     </nav>
   </div>
 
