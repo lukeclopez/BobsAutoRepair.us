@@ -29,6 +29,9 @@
    right: 0;
  }
 
+  .card-action {
+   color: white;
+ }
  .phone-num {
     font-size: 40px;
  }
