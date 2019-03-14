@@ -1,0 +1,15 @@
+.oldtimey {
+  font-family: Norican;
+  color: white;
+  text-size: large;
+}
+
+.shadow {
+  text-shadow: 2px 2px black;
+}
+
+.brand-logo img {
+    /* Logo Aspect Ratio: 1.09 */
+    height: 75px;
+    width: 82px;
+}
