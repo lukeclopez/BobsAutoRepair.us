@@ -1,6 +1,5 @@
 .oldtimey {
   font-family: Norican;
-  color: white;
   text-size: large;
 }
 
@@ -13,3 +12,32 @@
     height: 75px;
     width: 82px;
 }
+
+.award {
+  float: right;
+  position: relative;
+  top:90%;
+}
+
+.parallax-container {
+   height: 500px;
+ }
+
+ .para-br {
+   float: right;
+   bottom: 0;
+   right: 0;
+ }
+
+ .phone-num {
+    font-size: 40px;
+ }
+
+ .fixed {
+   position: fixed;
+   float: right;
+   bottom: 0;
+   right: 0;
+   margin: 50px 50px 50px 50px;
+
+ }
