@@ -51,6 +51,14 @@
     font-size: 40px;
  }
 
+ .tabs .indicator {
+     background-color: white;
+ }
+
+ .tabs a {
+     color: white;
+ }
+
  .fixed {
    position: fixed;
    float: right;
