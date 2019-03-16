@@ -28,44 +28,90 @@
   <div class="navbar">
     <nav>
       <div class="nav-wrapper green">
-        <a href="#" class="brand-logo">
+
+        <!-- Desktop Logo -->
+        <a href="#" class="brand-logo hide-on-med-and-down">
           <img src="images/bobs_auto_logo.png">
         </a>
+        <!-- Mobile Logo -->
+        <a href="#" class="brand-logo hide-on-large-only">
+          <img src="images/bobs_auto_logo.png" style="width:109px;height:100px;">
+        </a>
 
-        <ul class="right hide-on-med-and-down oldtimey">
+        <!-- Desktop Nav -->
+        <ul class="right oldtimey hide-on-med-and-down">
           <li><a href="#" style="font-size:150%;">Services</a></li>
           <li><a href="#" style="font-size:150%;">About Us</a></li>
           <li><a href="#" style="font-size:150%;">Contact Us</a></li>
           <li><a href="#" style="font-size:150%;">Blog</a></li>
         </ul>
+        <!-- Mobile Nav -->
+        <div class="oldtimey hide-on-med-and-up">
+          <ul class="left">
+            <li>
+              <a href="https://goo.gl/maps/vp7kXK7g6xE2" style="font-size:150%;">
+              <i class="material-icons large">location_on</i>
+              </a>
+            </li>
+            <li>
+              <a href="https://goo.gl/maps/vp7kXK7g6xE2">
+              Location
+              </a>
+            </li>
+          </ul>
+          <ul class="right">
+            <li>
+              <a href="tel:8137792277">
+              Call Us
+              </a>
+            </li>
+            <li>
+              <a href="tel:8137792277" style="font-size:150%;">
+              <i class="material-icons large">local_phone</i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Tablet Nav -->
+        <div class="show-on-medium">
+        <ul class="left oldtimey hide-on-large-only hide-on-small-only">
+          <li><a href="#" style="font-size:150%;">Services</a></li>
+          <li><a href="#" style="font-size:150%;">About Us</a></li>
+        </ul>
+        <ul class="right oldtimey hide-on-large-only hide-on-small-only">
+          <li><a href="#" style="font-size:150%;">Contact Us</a></li>
+          <li><a href="#" style="font-size:150%;">Blog</a></li>
+        </ul>
+      </div>
+
       </div>
     </nav>
   </div>
 
-  <div class="parallax-container">
+  <div class="parallax-container hide-on-med-and-down">
     <div class="parallax"><img src="images/shop.png"></div>
   </div>
 
-<div class="row fixed">
-  <div class="col s12 m12 l12">
-    <div class="card green">
-      <div class="card-content white-text">
-        <span class="card-title"><a href="tel:8137792277"><i class="material-icons small line-icon-6">local_phone</i>&nbsp;813-779-CARS</a></span>
-        <p><a href="https://goo.gl/maps/vp7kXK7g6xE2"><i class="material-icons small line-icon-6">location_on</i>&nbsp;37959 State Rd 54 Zephyrhills, FL</a></p>
-        <i class="material-icons small line-icon-6">schedule</i>&nbsp;Open 8am - 5ish, Monday - Friday
-      </div>
-      <div class="card-action green darken-1">
-        <div class="row">
-          <div class="col">
-          <p><a href="#" class="white-text" onclick="alert('Contact Us')">Schedule an Appointment<i class="material-icons tiny line-icon-3">chevron_right</i></a></p>
-          <a href="https://goo.gl/maps/vp7kXK7g6xE2" class="white-text" target="_blank">View on Google Maps<i class="material-icons tiny line-icon-3">chevron_right</i></a>
+  <!-- Contact Card -->
+  <div class="row fixed hide-on-med-and-down">
+    <div class="col s12 m12 l12">
+      <div class="card green">
+        <div class="card-content white-text">
+          <span class="card-title"><a href="tel:8137792277"><i class="material-icons small line-icon-6">local_phone</i>&nbsp;813-779-CARS</a></span>
+          <p><a href="https://goo.gl/maps/vp7kXK7g6xE2"><i class="material-icons small line-icon-6">location_on</i>&nbsp;37959 State Rd 54 Zephyrhills, FL</a></p>
+          <i class="material-icons small line-icon-6">schedule</i>&nbsp;Open 8am - 5ish, Monday - Friday
         </div>
-
+        <div class="card-action green darken-1">
+          <div class="row">
+            <div class="col">
+            <p><a href="#" class="white-text" onclick="alert('Contact Us')">Schedule an Appointment<i class="material-icons tiny line-icon-3">chevron_right</i></a></p>
+            <a href="https://goo.gl/maps/vp7kXK7g6xE2" class="white-text" target="_blank">View on Google Maps<i class="material-icons tiny line-icon-3">chevron_right</i></a>
+          </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
   <div class="section white">
       <div class="row container">
