@@ -59,6 +59,10 @@
      color: white;
  }
 
+ .more {
+    display: none;
+  }
+
  .fixed {
    position: fixed;
    float: right;

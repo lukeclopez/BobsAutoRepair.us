@@ -100,6 +100,7 @@
     </div>
   </div>
 
+  <!-- Home -->
   <div class="section white">
       <div class="row container">
         <h2 class="header oldtimey green-text">Why Choose Bob's Auto?</h2>
@@ -121,31 +122,63 @@
           <img class="award2" src="images/zcclogo_50.png">
           </p>
           <div class="container left">
-          The days of old-fashioned automotive service are here again:
+          <h3 class="header oldtimey green-text">Where The Deals Are Square!</h3>
+          The days of old-fashioned automotive service
+          <span id="landing-dots">...</span>
+          <span id="landing-more" class="more">
+          are here again:
            when the staff was friendly, the technicians were both skilled
             and honest, and you never needed a coupon to get a square deal.
              We know times are tough, and we save you money by fixing only
               what is necessary and prudent, always keeping your budget in mind.
                Our nostalgic atmosphere, coupled with a handshake and a smile,
                 while remind you of the “Good Ole Days!”
-          <p>
-            Bob’s Auto Repair provides a full range of automotive inspection,
-             repair and maintenance, all makes and models, including light
-              and medium duty trucks, diesel engines and commercial vehicles,
-               motor homes, and classic cars.
-          </p>
-          <p>
-            Located in Zephyrhills, Florida, we are convenient to Wesley Chapel,
-             Dade City, San Antonio, Crystal Springs, Thonotossasa, and northern
-              parts of Lakeland and Plant City. We invite you to learn more about
-               us by clicking on the links above, and encourage you to search
-                reviews found on the web to see what other people are saying
-                 about us at sites such as AutoMD, Superpages, Merchant Circle,
-                  Yelp, and the Better Business Bureau.
-          </p>
+                <p>
+                  Bob’s Auto Repair provides a full range of automotive inspection,
+                   repair and maintenance, all makes and models, including light
+                    and medium duty trucks, diesel engines and commercial vehicles,
+                     motor homes, and classic cars.
+                </p>
+                <p>
+                  Located in Zephyrhills, Florida, we are convenient to Wesley Chapel,
+                   Dade City, San Antonio, Crystal Springs, Thonotossasa, and northern
+                    parts of Lakeland and Plant City. We invite you to learn more about
+                     us by clicking on the links above, and encourage you to search
+                      reviews found on the web to see what other people are saying
+                       about us at sites such as AutoMD, Superpages, Merchant Circle,
+                        Yelp, and the Better Business Bureau.
+                </p>
+          </span>
+          <p><button class="btn green" onclick="showLanding()" id="landingBtn">Read more</button></p>
+
           </div>
         </ul>
       </div>
+  </div>
+
+  <!-- Services -->
+  <div class="section white">
+      <div class="row container">
+          <div class="container left">
+            <h3 class="header oldtimey green-text">Services</h3>
+            <p class="grey-text text-darken-3 lighten-3">
+              Bob’s Auto Repair is a full-service NAPA
+              <span id="services-dots">...</span>
+               <span id="services-more" class="more">
+                 Auto Care Center.
+              We perform inspection, repair and maintenance on auto mobiles,
+               light and medium duty trucks, diesels, motor homes, and fleet
+                vehicles. We are able to access your manufacturer’s maintenance
+                 schedules and advise you what is required to keep your new car’s
+                  warranty in force. Our work is backed up by a nationwide NAPA 12
+                   Month/ 12,000 mile “Peace of Mind” Warranty.​ We also provide
+                    free estimates, limited shuttle services, and after hours drop
+                     off and pick-up for customer convenience.
+                     </p>
+                      </span>
+            <p><button class="btn green" onclick="showServices()" id="servicesBtn">Read more</button></p>
+          </div>
+        </div>
   </div>
 
   <script>
@@ -157,6 +190,38 @@
       //contactCard.style.position = "relative";
       console.log("Do something")
     });
+
+    function showLanding() {
+    var dots = document.getElementById("landing-dots");
+    var moreText = document.getElementById("landing-more");
+    var btnText = document.getElementById("landingBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }
+
+  function showServices() {
+  var dots = document.getElementById("services-dots");
+  var moreText = document.getElementById("services-more");
+  var btnText = document.getElementById("servicesBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
 
   </script>
 
