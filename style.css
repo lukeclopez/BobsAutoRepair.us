@@ -23,6 +23,16 @@
    height: 500px;
  }
 
+ .line-icon-3 {
+   position: relative;
+   top: 3px;
+ }
+
+ .line-icon-6 {
+   position: relative;
+   top: 6px;
+ }
+
  .para-br {
    float: right;
    bottom: 0;
@@ -32,6 +42,11 @@
   .card-action {
    color: white;
  }
+
+ .card a {
+   color: white
+ }
+ 
  .phone-num {
     font-size: 40px;
  }
